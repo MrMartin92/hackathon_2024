@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sunshiney&display=swap');
+
+h1 {
+    /* background-color: black; */
+}
+
+body {
+    /* Global font settings */
+    color: white;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    margin: 0;
+
+    background-image: url(assets/background4.gif);
+}
+
+html {
+    cursor: url("assets/hamster2.png"),auto;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+#bookContainer {
+    zoom: 0.3;
+
+    table {
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .button {
+        display: inline;
+        margin: 1px;
+    }
+
+    .bookBackground {
+        display: block;
+        position: relative;
+        z-index: -2;
+    }
+
+    .sticker {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-height: 10rem;
+    }
+
+    .sticker.right {
+        display: inline;
+        float: right;
+        margin-left: 1rem;
+        max-width: 10rem;
+        max-height: none;
+    }
+
+    .sticker.left {
+        display: inline;
+        float: left;
+        margin-right: 1rem;
+        max-width: 10rem;
+        max-height: none;
+    }
+
+    .bookArrow {
+        background-image: url("assets/arrow.webp");
+        background-size: contain; /* Bild skalieren, um den Container auszufüllen */
+        background-repeat: no-repeat; /* Bild nicht wiederholen */
+        background-position: center; /* Bild zentrieren */
+        width: 100px; /* Breite des Containers */
+        height: 100px; /* Höhe des Containers */
+
+        position: absolute;
+        bottom: 0;
+        /* visibility: hidden; */
+    }
+
+    .bookArrow:hover {
+        filter: invert(6%) sepia(68%) saturate(6008%) hue-rotate(245deg) brightness(99%) contrast(99%);
+    }
+
+    #bookLeftArrow {
+        left: 0;
+        transform: scaleX(-1);
+    }
+
+    #bookRightArrow {
+        right: 0;
+    }
+
+    .bookPage {
+        position: absolute;
+        zoom: 3;
+
+        /* font-family: "Mynerve", cursive; */
+        font-family: "Indie Flower", cursive;
+        /* font-family: "Sunshiney", cursive; */
+
+        font-size: larger;
+        font-weight: bold;
+        color: midnightblue;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        text-align: left;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .bookTitle {
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #bookLeftPage {
+        padding-left: 3rem;
+    }
+
+    #bookRightPage {
+        padding-right: 3rem;
+    }
+
+    .polaroid {
+        display: block;
+        margin: auto;
+        max-width: 85%;
+    }
+}
+
+#cat2 {
+    text-align: right;
+    filter: saturate(10) hue-rotate(180deg);
+    transform: scaleX(-1);
+}
+
+#navigation {
+    ul {
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        padding: 10px 20px;
+        color: unset;
+        text-decoration: none;
+        background-color: palevioletred;
+        cursor: unset;
+        border-radius: 1rem;
+    }
+
+    li:hover {
+        background-color: pink;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/scripts.js"></script>
+    <title>
+        Welcome
+    </title>
+</head>
+<body>
+    <marquee scrollamount="30"><h1>Hello World</h1></marquee>
+    <div id="navigation">
+        <ul>
+            <li onclick="selectView('blog', 0)">Blog</li>
+            <li onclick="selectView('about')">About me</li>
+            <li onclick="selectView('polaroid', 0)">Polaroid</li>
+            <li onclick="selectView('links')">Links</li>
+            <li onclick="selectView('ricky')">Ricky</li>
+            <li onclick="selectView('snake')">Play Snake</li>
+        </ul>
+    </div>
+    <img src="http://www.fillster.com/images/dividers/57s.gif" border="0" alt="Dividers for Myspace @ Fillster.com">
+
+    <div id="bookContainer">
+        <table id="bookTable">
+            <tr>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_01.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_02.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_03.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_04.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_05.png"></td>
+            </tr>
+            <tr>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_06.png"></td>
+                <td>
+                    <div class="bookPage" id="bookLeftPage">
+                        <div class="bookTitle"></div>
+                        <div class="bookText"></div>
+                        <div id="bookLeftArrow" class="bookArrow" onclick="nextPage(this)"></div>
+                    </div>
+                    <img class="bookBackground" src="assets/book/IMG_6459_07.png">
+                </td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_08.png"></td>
+                <td>
+                    <div class="bookPage" id="bookRightPage">
+                        <div class="bookText"></div>
+                        <div id="bookRightArrow" class="bookArrow" onclick="nextPage(this)"></div>
+                    </div>
+                    <img class="bookBackground" src="assets/book/IMG_6459_09.png">
+                </td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_03-10.png"></td>
+            </tr>
+            <tr>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_11.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_05-12.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_13.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_05-14.png"></td>
+                <td><img class="bookBackground" src="assets/book/IMG_6459_15.png"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="footer">
+        <img src="assets/pixel-cat.gif">
+        Hackathon 2024
+        <img src="assets/pixel-cat.gif" id="cat2">
+    </div>
+</body>
+</html>
